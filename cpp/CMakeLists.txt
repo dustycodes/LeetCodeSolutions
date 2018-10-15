@@ -18,6 +18,7 @@ set (BASE_INCLUDES
 ########################################################################
 # TwoSum https://leetcode.com/problems/two-sum/description/
 ########################################################################
+set (TARGET_NAME TwoSum)
 include_directories (
     ${BASE_INCLUDES}
 )
@@ -26,6 +27,22 @@ file(GLOB TWO_SUM_SRC
   ${CMAKE_CURRENT_SOURCE_DIR}/src/TwoSum.cpp
 )
 
-add_executable(TwoSum
+add_executable(${TARGET_NAME}
   ${TWO_SUM_SRC}
+)
+
+########################################################################
+# AddTwoNumbers https://leetcode.com/problems/add-two-numbers/description/
+########################################################################
+set (TARGET_NAME AddTwoNumbers)
+include_directories (
+    ${BASE_INCLUDES}
+)
+
+file(GLOB SRC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/AddTwoNumbers.cpp
+)
+
+add_executable(${TARGET_NAME}
+  ${SRC}
 )
