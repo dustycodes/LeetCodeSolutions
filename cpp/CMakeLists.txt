@@ -46,3 +46,19 @@ file(GLOB SRC
 add_executable(${TARGET_NAME}
   ${SRC}
 )
+
+########################################################################
+# LengthOfLongestSubstring https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+########################################################################
+set (TARGET_NAME LengthOfLongestSubstring)
+include_directories (
+    ${BASE_INCLUDES}
+)
+
+file(GLOB SRC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/LongestSubstring.cpp
+)
+
+add_executable(${TARGET_NAME}
+  ${SRC}
+)
