@@ -77,3 +77,19 @@ file(GLOB SRC
 add_executable(${TARGET_NAME}
   ${SRC}
 )
+
+########################################################################
+# LongestPalindrome https://leetcode.com/problems/longest-palindromic-substring/description
+########################################################################
+set (TARGET_NAME LongestPalindrome)
+include_directories (
+    ${BASE_INCLUDES}
+)
+
+file(GLOB SRC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/LongestPalindrome.cpp
+)
+
+add_executable(${TARGET_NAME}
+  ${SRC}
+)
