@@ -62,3 +62,18 @@ file(GLOB SRC
 add_executable(${TARGET_NAME}
   ${SRC}
 )
+########################################################################
+# MedianOfTwoSortedArrays https://leetcode.com/problems/median-of-two-sorted-arrays/description
+########################################################################
+set (TARGET_NAME MedianOfTwoSortedArrays)
+include_directories (
+    ${BASE_INCLUDES}
+)
+
+file(GLOB SRC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/MedianOfTwoSortedArrays.cpp
+)
+
+add_executable(${TARGET_NAME}
+  ${SRC}
+)
